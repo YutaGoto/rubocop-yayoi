@@ -2,7 +2,7 @@
 
 `ζ*'ヮ')ζ＜うっうー！`
 
-このgemは [rubocop]() 実行後に表示されるテキストがアイドルマスター 765プロ所属の高槻やよい風に指摘してくれるgemです！
+このgemは [rubocop](https://github.com/rubocop-hq/rubocop) 実行後に表示されるテキストがアイドルマスター 765プロ所属の高槻やよい風に指摘してくれるgemです！
 
 ## Installation
 
