@@ -3,7 +3,8 @@
 module RuboCop
   module Cop
     module UncommunicativeName
-      LENGTH_MSG = "ζ*'ヮ')ζ＜うっうー！ %<name_type>sの長さは最低でも%<min>s文字以上にしましょうねー！".freeze
+      LENGTH_MSG = "ζ*'ヮ')ζ＜うっうー！" \
+                   '%<name_type>sの長さは最低でも%<min>s文字以上にしましょうねー！'.freeze
 
       def name_type(node)
         @name_type ||= begin

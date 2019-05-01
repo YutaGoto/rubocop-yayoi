@@ -1,0 +1,15 @@
+require:
+  - rubocop-yayoi
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+
+Naming/FileName:
+  Exclude:
+  - lib/rubocop-yayoi.rb
+
+Style/Documentation:
+  Enabled: false

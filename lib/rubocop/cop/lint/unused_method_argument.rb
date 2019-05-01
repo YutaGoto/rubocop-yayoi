@@ -4,9 +4,11 @@ module RuboCop
   module Cop
     module Lint
       class UnusedMethodArgument < Cop
-
+        # rubocop:disable Metrics/MethodLength
         def message(variable)
-          message = String.new("ζ*'ヮ')ζ＜うっうー！使っていない引数がありますよー - `#{variable.name}`！")
+          message = String.new(
+            "ζ*'ヮ')ζ＜うっうー！使っていない引数がありますよー `#{variable.name}`！"
+          )
 
           unless variable.keyword_argument?
             message << " もし使わないなら、`_`か`_#{variable.name}`のようにしましょうねー！"
@@ -16,12 +18,13 @@ module RuboCop
           all_arguments = scope.variables.each_value.select(&:method_argument?)
 
           if all_arguments.none?(&:referenced?)
-            message << " 引数がなんでもいいなら、メソッド名を `#{scope.name}(*)` に変えてもいいですよー！"
+            message << ' 引数がなんでもいいなら、' \
+                       "メソッド名を `#{scope.name}(*)` に変えてもいいですよー！"
           end
 
           message
         end
-
+        # rubocop:enable Metrics/MethodLength
       end
     end
   end

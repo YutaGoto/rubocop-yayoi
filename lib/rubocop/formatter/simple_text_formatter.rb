@@ -6,7 +6,9 @@ module RuboCop
       class Report
         def summary
           if @correction_count > 0
-            "ζ*'ヮ')ζ＜うっうー！#{@file_count}ファイルチェックしましたよー！\r\n#{offences_text}\r\nζ*'ヮ')ζ＜うっうー#{@offense_count}こ直しましたよー！"
+            "ζ*'ヮ')ζ＜うっうー！#{@file_count}ファイルチェックしましたよー！\r\n" \
+            "#{offences_text}\r\n" \
+            "ζ*'ヮ')ζ＜うっうー#{corrections}直しましたよー！"
           else
             "ζ*'ヮ')ζ＜うっうー！#{@file_count}ファイルチェックしましたよー！\r\n#{offences_text}"
           end
@@ -27,6 +29,13 @@ module RuboCop
           else
             "ζ*'ヮ')ζ＜うっうー！#{offenses}怪しいですよー！"
           end
+        end
+
+        def corrections
+          text = "#{@correction_count}こ"
+          color = @correction_count == @offense_count ? :green : :cyan
+
+          colorize(text, color)
         end
       end
     end

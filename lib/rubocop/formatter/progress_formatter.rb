@@ -3,7 +3,6 @@
 module RuboCop
   module Formatter
     class ProgressFormatter < ClangStyleFormatter
-
       def started(target_files)
         super
         @offenses_for_files = {}
