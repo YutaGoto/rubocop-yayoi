@@ -4,7 +4,6 @@ module RuboCop
   module Cop
     module Lint
       class UnusedMethodArgument < Cop
-        # rubocop:disable Metrics/MethodLength
         def message(variable)
           message = String.new(
             "ζ*'ヮ')ζ＜うっうー！使っていない引数がありますよー `#{variable.name}`！"
@@ -24,7 +23,6 @@ module RuboCop
 
           message
         end
-        # rubocop:enable Metrics/MethodLength
       end
     end
   end

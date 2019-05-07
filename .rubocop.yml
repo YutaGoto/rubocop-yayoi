@@ -7,6 +7,25 @@ AllCops:
     - 'spec/fixtures/**/*'
     - 'tmp/**/*'
 
+# Offense count: 77
+Metrics/AbcSize:
+  Max: 17
+
+# Offense count: 52
+# Configuration parameters: CountComments.
+Metrics/ClassLength:
+  Max: 181
+
+# Offense count: 222
+# Configuration parameters: CountComments, ExcludedMethods.
+Metrics/MethodLength:
+  Max: 14
+
+# Offense count: 5
+# Configuration parameters: CountComments.
+Metrics/ModuleLength:
+  Max: 141
+
 Naming/FileName:
   Exclude:
   - lib/rubocop-yayoi.rb
