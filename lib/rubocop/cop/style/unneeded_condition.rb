@@ -4,8 +4,16 @@ module RuboCop
   module Cop
     module Style
       class UnneededCondition < Cop
-        MSG = "ζ*'ヮ')ζ＜うっうー！ダブルパイプ(`||`)を使いましょうねー！".freeze
-        UNNEEDED_CONDITION = "ζ*'ヮ')ζ＜うっうー！いらない条件がありますよー！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！ダブルパイプ(`||`)を使いましょうねー！".freeze
+        YAYOI_UNNEEDED_CONDITION = "ζ*'ヮ')ζ＜うっうー！いらない条件がありますよー！".freeze
+
+        def message(node)
+          if node.modifier_form? || !node.else_branch
+            YAYOI_UNNEEDED_CONDITION
+          else
+            YAYOI_MSG
+          end
+        end
       end
     end
   end
