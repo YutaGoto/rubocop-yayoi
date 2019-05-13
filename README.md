@@ -1,5 +1,7 @@
 # Rubocop::Yayoi
 
+[![Build Status](https://travis-ci.org/YutaGoto/rubocop-yayoi.svg?branch=master)](https://travis-ci.org/YutaGoto/rubocop-yayoi)
+
 `ζ*'ヮ')ζ＜うっうー！`
 
 このgemは [rubocop](https://github.com/rubocop-hq/rubocop) 実行後に表示されるテキストがアイドルマスター 765プロ所属の高槻やよい風に指摘してくれるgemです！
