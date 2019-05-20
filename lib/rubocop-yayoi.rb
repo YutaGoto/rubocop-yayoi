@@ -1,5 +1,4 @@
 require 'rubocop'
-require 'hook'
 
 require_relative 'rubocop/cop/cop'
 

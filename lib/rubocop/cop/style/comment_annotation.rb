@@ -4,12 +4,10 @@ module RuboCop
   module Cop
     module Style
       class CommentAnnotation < Cop
-        hook do
-          def investigate(*)
-            set_message
-            super
-          end
-        end
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！`%<keyword>s`のような注釈は全部大きい文字にして" \
+                    'コロン、スペースのあとにコメントを書きましょうねー！'.freeze
+        YAYOI_MISSING_NOTE = "ζ*'ヮ')ζ＜うっうー！" \
+                             '`%<keyword>s`があるけども、肝心のコメントがないですよー！'.freeze
 
         def investigate(processed_source)
           processed_source.comments.each_with_index do |comment, index|
@@ -32,13 +30,7 @@ module RuboCop
         private
 
         def message(note)
-          note ? @msg : @missing_note
-        end
-
-        def set_message
-          @msg = "ζ*'ヮ')ζ＜うっうー！`%<keyword>s`のような注釈は全部大きい文字にして" \
-                 'コロン、スペースのあとにコメントを書きましょうねー！'
-          @missing_note = "ζ*'ヮ')ζ＜うっうー！`%<keyword>s`があるけども、肝心のコメントがないですよー！"
+          note ? YAYOI_MSG : YAYOI_MISSING_NOTE
         end
       end
     end
