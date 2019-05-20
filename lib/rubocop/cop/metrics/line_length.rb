@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Metrics
       class LineLength < Cop
-        MSG = "ζ*'ヮ')ζ＜うっうー！一行の長さがとても長いですよー！ [%<length>d/%<max>d]".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！一行の長さがとても長いですよー！ [%<length>d/%<max>d]".freeze
       end
     end
   end

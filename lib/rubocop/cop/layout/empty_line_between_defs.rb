@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Layout
       class EmptyLineBetweenDefs < Cop
-        MSG = "ζ*'ヮ')ζ＜うっうー！メソッドとメソッドの間には空行をいれましょうねー！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！メソッドとメソッドの間には空行をいれましょうねー！".freeze
       end
     end
   end

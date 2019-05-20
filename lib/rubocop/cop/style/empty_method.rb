@@ -4,9 +4,13 @@ module RuboCop
   module Cop
     module Style
       class EmptyMethod < Cop
-        MSG_COMPACT = "ζ*'ヮ')ζ＜うっうー！なにも書いてないメソッドは1行で書きましょうねー！".freeze
-        MSG_EXPANDED = "ζ*'ヮ')ζ＜うっうー！なにも書いてないメソッドは1行で書かないで、" \
+        YAYOI_MSG_COMPACT = "ζ*'ヮ')ζ＜うっうー！なにも書いてないメソッドは1行で書きましょうねー！".freeze
+        YAYOI_MSG_EXPANDED = "ζ*'ヮ')ζ＜うっうー！なにも書いてないメソッドは1行で書かないで、" \
                        '`end`を次の行に書きましょうねー！'.freeze
+
+        def message(_node)
+          compact_style? ? YAYOI_MSG_COMPACT : YAYOI_MSG_EXPANDED
+        end
       end
     end
   end

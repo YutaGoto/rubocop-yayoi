@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Style
       class ColonMethodCall < Cop
-        MSG = "ζ*'ヮ')ζ＜うっうー！メソッドを呼ぶのに`::`を使ってはいけません！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！メソッドを呼ぶのに`::`を使ってはいけません！".freeze
       end
     end
   end

@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Style
       class MutableConstant < Cop
-        MSG = "ζ*'ヮ')ζ＜うっうー！書き換え可能な定数を`.freeze`で更新できないようにしましょうねー！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！書き換え可能な定数を`.freeze`で更新できないようにしましょうねー！".freeze
       end
     end
   end

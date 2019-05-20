@@ -5,7 +5,7 @@ module RuboCop
     module Layout
       class DefEndAlignment < Cop
         include EndKeywordAlignment
-        MSG = "ζ*'ヮ')ζ＜うっうー！ %d, %dにある`end`が%d, %dにある`%s`とずれていますよー！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%d, %dにある`end`が%d, %dにある`%s`とずれていますよー！".freeze
       end
     end
   end

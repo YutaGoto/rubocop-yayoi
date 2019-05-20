@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Metrics
       class CyclomaticComplexity < Cop
-        MSG = "ζ*'ヮ')ζ＜うっうー！%<method>sの循環的複雑度がとても高いですよー！" \
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%<method>sの循環的複雑度がとても高いですよー！" \
         '[%<complexity>d/%<max>d]'.freeze
       end
     end
