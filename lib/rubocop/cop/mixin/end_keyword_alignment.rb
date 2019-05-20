@@ -4,7 +4,8 @@ module RuboCop
   module Cop
     module EndKeywordAlignment
       YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！ %<end_line>d, %<end_col>dにある`end`が" \
-            '%<align_line>d, %<align_col>dにある`%<source>s`とずれていますよー！'.freeze
+                  '%<align_line>d, %<align_col>d' \
+                  'にある`%<source>s`とずれていますよー！'.freeze
 
       def add_offense_for_misalignment(node, align_with)
         end_loc = node.loc.end

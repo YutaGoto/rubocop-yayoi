@@ -22,6 +22,12 @@ module RuboCop
         def deferred_message(node)
           format(YAYOI_MSG_DEFERRED, type: node.type)
         end
+
+        def message(type, desc)
+          kind = self.class::KIND
+          kind = self.class::YAYOI_KIND if kind.blank?
+          format(type, kind: kind, location: desc)
+        end
       end
     end
   end

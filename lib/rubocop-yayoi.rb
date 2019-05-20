@@ -1,6 +1,8 @@
 require 'rubocop'
 require 'hook'
 
+require_relative 'rubocop/cop/cop'
+
 require_relative 'rubocop/formatter/progress_formatter'
 require_relative 'rubocop/formatter/simple_text_formatter'
 
