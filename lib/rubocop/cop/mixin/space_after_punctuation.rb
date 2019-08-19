@@ -3,7 +3,7 @@
 module RuboCop
   module Cop
     module SpaceAfterPunctuation
-      YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%<token>sの後ろにスペースがないですよー！".freeze
+      YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%<token>sの後ろにスペースがないですよー！"
 
       def investigate(processed_source)
         each_missing_space(processed_source.tokens) do |token|

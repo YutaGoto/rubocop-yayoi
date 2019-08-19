@@ -5,9 +5,9 @@ module RuboCop
     module Style
       class CommentAnnotation < Cop
         YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！`%<keyword>s`のような注釈は全部大きい文字にして" \
-                    'コロン、スペースのあとにコメントを書きましょうねー！'.freeze
+                    'コロン、スペースのあとにコメントを書きましょうねー！'
         YAYOI_MISSING_NOTE = "ζ*'ヮ')ζ＜うっうー！" \
-                             '`%<keyword>s`があるけども、肝心のコメントがないですよー！'.freeze
+                             '`%<keyword>s`があるけども、肝心のコメントがないですよー！'
 
         def investigate(processed_source)
           processed_source.comments.each_with_index do |comment, index|

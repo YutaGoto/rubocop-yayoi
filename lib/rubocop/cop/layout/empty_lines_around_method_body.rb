@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Layout
       class EmptyLinesAroundMethodBody < Cop
-        YAYOI_KIND = 'メソッド'.freeze
+        YAYOI_KIND = 'メソッド'
       end
     end
   end

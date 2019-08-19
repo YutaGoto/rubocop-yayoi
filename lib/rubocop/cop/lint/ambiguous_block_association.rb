@@ -6,7 +6,7 @@ module RuboCop
       class AmbiguousBlockAssociation < Cop
         YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！" \
                     'ブロックが`%<method>s`メソッドの呼び出しにちゃんと関連連れられているかわからないですー。' \
-                    'ちゃんと`%<param>s`にカッコを使いましょうねー！'.freeze
+                    'ちゃんと`%<param>s`にカッコを使いましょうねー！'
 
         def message(send_node)
           block_param = send_node.last_argument

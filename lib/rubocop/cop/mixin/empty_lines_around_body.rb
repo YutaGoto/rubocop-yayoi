@@ -4,9 +4,9 @@ module RuboCop
   module Cop
     module Layout
       module EmptyLinesAroundBody
-        YAYOI_MSG_EXTRA = "ζ*'ヮ')ζ＜うっうー！%<kind>sに空行が見つかりましたよー！".freeze
-        YAYOI_MSG_MISSING = "ζ*'ヮ')ζ＜うっうー！%<kind>sのまわりに空行がないですよー！".freeze
-        YAYOI_MSG_DEFERRED = "ζ*'ヮ')ζ＜うっうー！%<type>sの前に空行がないですよー！".freeze
+        YAYOI_MSG_EXTRA = "ζ*'ヮ')ζ＜うっうー！%<kind>sに空行が見つかりましたよー！"
+        YAYOI_MSG_MISSING = "ζ*'ヮ')ζ＜うっうー！%<kind>sのまわりに空行がないですよー！"
+        YAYOI_MSG_DEFERRED = "ζ*'ヮ')ζ＜うっうー！%<type>sの前に空行がないですよー！"
 
         def check_source(style, line_no, desc)
           case style

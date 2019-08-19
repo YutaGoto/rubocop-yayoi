@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Style
       class DefWithParentheses < Cop
-        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！メソッドに引数がないときは、`()`を省略しましょうねー！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！メソッドに引数がないときは、`()`を省略しましょうねー！"
       end
     end
   end

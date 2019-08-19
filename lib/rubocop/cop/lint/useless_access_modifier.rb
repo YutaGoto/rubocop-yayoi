@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Lint
       class UselessAccessModifier < Cop
-        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！`%<current>s`は意味がないですよー！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！`%<current>s`は意味がないですよー！"
 
         def check_node(node)
           return if node.nil?

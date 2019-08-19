@@ -5,7 +5,7 @@ module RuboCop
     class SimpleTextFormatter < BaseFormatter
       class Report
         def summary
-          if @correction_count > 0
+          if @correction_count.positive?
             "ζ*'ヮ')ζ＜うっうー！#{@file_count}ファイルチェックしましたよー！\r\n" \
             "#{offences_text}\r\n" \
             "ζ*'ヮ')ζ＜うっうー#{corrections}直しましたよー！"

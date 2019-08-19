@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Lint
       class UselessAssignment < Cop
-        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！使っていない変数がありますよー！ - `%<variable>s`.".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！使っていない変数がありますよー！ - `%<variable>s`."
 
         def message_for_useless_assignment(assignment)
           variable = assignment.variable

@@ -6,7 +6,7 @@ module RuboCop
       class IndentationWidth < Cop
         YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！" \
                     '%<configured_indentation_width>dスペースを使いましょうねー' \
-                    '(%<indentation>dはだめですよー)'.freeze
+                    '(%<indentation>dはだめですよー)'
       end
     end
   end
