@@ -6,11 +6,11 @@ module RuboCop
       class IneffectiveAccessModifier < Cop
         YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%<line>d行目にある`%<modifier>s`は" \
                     'シングルトンメソッドの%<modifier>sを作りませんよー！' \
-                    '代わりに%<alternative>s'.freeze
+                    '代わりに%<alternative>s'
         YAYOI_ALTERNATIVE_PRIVATE = '`private_class_method`か`private`を' \
-                                    '`class << self`ブロックの内部に置きましょー！'.freeze
+                                    '`class << self`ブロックの内部に置きましょー！'
         YAYOI_ALTERNATIVE_PROTECTED = '`protected`を' \
-                                      '`class << self`ブロックの内部に置きましょー！'.freeze
+                                      '`class << self`ブロックの内部に置きましょー！'
 
         def format_message(modifier)
           visibility = modifier.method_name

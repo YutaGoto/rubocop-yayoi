@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Style
       class NumericLiterals < Cop
-        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！3桁区切りにアンダースコア(_)を使いましょうねー！".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！3桁区切りにアンダースコア(_)を使いましょうねー！"
       end
     end
   end

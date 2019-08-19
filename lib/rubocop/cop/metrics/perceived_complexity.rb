@@ -5,7 +5,7 @@ module RuboCop
     module Metrics
       class PerceivedComplexity < Cop
         YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%<method>sの複雑度がとても高いですよー！" \
-              '[%<complexity>d/%<max>d]'.freeze
+              '[%<complexity>d/%<max>d]'
       end
     end
   end

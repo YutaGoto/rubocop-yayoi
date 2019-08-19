@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module UncommunicativeName
       YAYOI_LENGTH_YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！" \
-                         '%<name_type>sの長さは最低でも%<min>s文字以上にしましょうねー！'.freeze
+                         '%<name_type>sの長さは最低でも%<min>s文字以上にしましょうねー！'
 
       def name_type(node)
         @name_type ||= begin

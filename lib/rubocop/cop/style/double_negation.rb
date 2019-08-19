@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Style
       class DoubleNegation < Cop
-        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！二重否定を使わないようにしましょうねー！ (`!!`)".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！二重否定を使わないようにしましょうねー！ (`!!`)"
       end
     end
   end

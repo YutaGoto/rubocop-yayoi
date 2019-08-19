@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module Style
       class Documentation < Cop
-        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%<type>sのドキュメントのコメントを書きましょうねー".freeze
+        YAYOI_MSG = "ζ*'ヮ')ζ＜うっうー！%<type>sのドキュメントのコメントを書きましょうねー"
 
         def check(node, body, type)
           return if namespace?(body)
